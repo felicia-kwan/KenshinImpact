@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+
+@font-face {
+  font-family: "ja-jp";
+  src: url("../Assets/font/ja-jp.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.page header {
+  position: relative;
+}
+
+.page header nav {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page header nav .icon {
+  padding-left: 3em;
+  width: 0px;
+}
+
+.page header nav .navigation {
+  display: none;
+  white-space: nowrap;
+  width: 50em;
+}
+
+.page header nav .navigation .homeButton,
+.page header nav .navigation .charactersButton,
+.page header nav .navigation .galleryButton,
+.page header nav .navigation .aboutButton {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  font-family: 'Roboto';
+  letter-spacing: 1px;
+  margin-right: 2%;
+  margin-left: 2em;
+}
+
+.page header nav .navigation .homeButton:hover,
+.page header nav .navigation .charactersButton:hover,
+.page header nav .navigation .galleryButton:hover,
+.page header nav .navigation .aboutButton:hover {
+  font-weight: bold;
+}
+
+.page header nav .navigation .loginButton {
+  background-image: linear-gradient(to left, #FFB238, #FF824B);
+  padding: 0.6em 2em;
+  text-decoration: none;
+  font-family: 'ja-jp';
+  border-radius: 100px;
+  font-size: 110%;
+  color: white;
+  margin-left: 2em;
+  white-space: nowrap;
+}
+
+.page header nav .mobileMenu {
+  margin-right: 3em;
+  width: 2.5em;
+}
+
+.page header nav .mobileMenu:hover {
+  cursor: pointer;
+}
+
+.page header nav .mobileNav {
+  position: fixed;
+  z-index: 999;
+  height: 200vh;
+  top: 0;
+  right: 0;
+  width: 70%;
+  opacity: 95%;
+  background-color: #2c2d47;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.page header nav .mobileNav .exitMobile {
+  width: 40px;
+  margin-top: 1.8em;
+  margin-right: 3em;
+  margin-bottom: 4em;
+}
+
+.page header nav .mobileNav .exitMobile:hover {
+  cursor: pointer;
+}
+
+.page header nav .mobileNav .homeButton,
+.page header nav .mobileNav .charactersButton,
+.page header nav .mobileNav .galleryButton,
+.page header nav .mobileNav .aboutButton {
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+  font-family: 'Roboto';
+  letter-spacing: 1px;
+  margin-right: 50px;
+  margin-left: 2em;
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+.page header nav .mobileNav .homeButton:hover,
+.page header nav .mobileNav .charactersButton:hover,
+.page header nav .mobileNav .galleryButton:hover,
+.page header nav .mobileNav .aboutButton:hover {
+  font-weight: bold;
+}
+
+.contentContainer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contentContainer .heroSection {
+  width: 100;
+}
+
+.contentContainer .heroSection img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contentContainer .characterSection {
+  width: 100;
+}
+
+.contentContainer .characterSection img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media only screen and (min-width: 650px) {
+  .page .lore .bg2 {
+    width: 200%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page .header .backgroundImage {
+    width: 175%;
+  }
+
+  .page .lore .bg2 {
+    width: 175%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    position: relative;
+  }
+
+  .header nav {
+    position: absolute;
+  }
+
+  .page .header .backgroundImage {
+    width: 150%;
+  }
+
+  .page .lore .bg2 {
+    width: 150%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .page .header .backgroundImage {
+    width: 100%;
+  }
+
+  .page .header nav .mobileMenu {
+    display: none;
+  }
+
+  .page .header nav .navigation {
+    display: inline;
+  }
+
+  .page .lore .bg2 {
+    width: 100%;
+  }
+}

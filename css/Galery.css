@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+
+@font-face {
+  font-family: "ja-jp";
+  src: url("../Assets/font/ja-jp.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.headerSection header {
+  position: relative;
+}
+
+.headerSection header nav {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerSection header nav .icon {
+  padding-left: 3em;
+  width: 0px;
+}
+
+.headerSection header nav .navigation {
+  display: none;
+  white-space: nowrap;
+  width: 50em;
+}
+
+.headerSection header nav .navigation .homeButton,
+.headerSection header nav .navigation .charactersButton,
+.headerSection header nav .navigation .galleryButton,
+.headerSection header nav .navigation .aboutButton {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  font-family: 'Roboto';
+  letter-spacing: 1px;
+  margin-right: 2%;
+  margin-left: 2em;
+}
+
+.headerSection header nav .navigation .homeButton:hover,
+.headerSection header nav .navigation .charactersButton:hover,
+.headerSection header nav .navigation .galleryButton:hover,
+.headerSection header nav .navigation .aboutButton:hover {
+  font-weight: bold;
+}
+
+.headerSection header nav .navigation .loginButton {
+  background-image: linear-gradient(to left, #FFB238, #FF824B);
+  padding: 0.6em 2em;
+  text-decoration: none;
+  font-family: 'ja-jp';
+  border-radius: 100px;
+  font-size: 110%;
+  color: white;
+  margin-left: 2em;
+  white-space: nowrap;
+}
+
+.headerSection header nav .mobileMenu {
+  margin-right: 3em;
+  width: 2.5em;
+}
+
+.headerSection header nav .mobileMenu:hover {
+  cursor: pointer;
+}
+
+.headerSection header nav .mobileNav {
+  position: fixed;
+  z-index: 999;
+  height: 200vh;
+  top: 0;
+  right: 0;
+  width: 70%;
+  opacity: 95%;
+  background-color: #2c2d47;
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.headerSection header nav .mobileNav .exitMobile {
+  width: 40px;
+  margin-top: 1.8em;
+  margin-right: 3em;
+  margin-bottom: 4em;
+}
+
+.headerSection header nav .mobileNav .exitMobile:hover {
+  cursor: pointer;
+}
+
+.headerSection header nav .mobileNav .homeButton,
+.headerSection header nav .mobileNav .charactersButton,
+.headerSection header nav .mobileNav .galleryButton,
+.headerSection header nav .mobileNav .aboutButton {
+  text-decoration: none;
+  font-size: 2em;
+  color: white;
+  font-family: 'Roboto';
+  letter-spacing: 1px;
+  margin-right: 50px;
+  margin-left: 2em;
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+.headerSection header nav .mobileNav .homeButton:hover,
+.headerSection header nav .mobileNav .charactersButton:hover,
+.headerSection header nav .mobileNav .galleryButton:hover,
+.headerSection header nav .mobileNav .aboutButton:hover {
+  font-weight: bold;
+}
+
+.itemContainer {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.itemContainer .imgBx1 {
+  width: 100%;
+  height: 20%;
+}
+
+.itemContainer .imgBx1 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.itemContainer .imgBx1 input {
+  display: none;
+}
+
+.itemContainer .imgBx2 {
+  width: 100%;
+  height: 20%;
+}
+
+.itemContainer .imgBx2 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.itemContainer .imgBx2 input {
+  display: none;
+}
+
+.itemContainer .imgBx3 {
+  width: 100%;
+  height: 20%;
+}
+
+.itemContainer .imgBx3 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.itemContainer .imgBx3 input {
+  display: none;
+}
+
+.itemContainer .imgBx4 {
+  width: 100%;
+  height: 20%;
+}
+
+.itemContainer .imgBx4 img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.itemContainer .imgBx4 input {
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  width: 100%;
+}
+
+footer img {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 30%;
+  margin-left: 35vw;
+}
+
+footer .copyright {
+  text-align: center;
+  font-family: 'ja-jp';
+  color: white;
+  width: 100%;
+  font-size: 200%;
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .icon {
+    padding-left: 3em;
+    width: 0px;
+  }
+
+  .itemContainer {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .itemContainer .imgBx1 {
+    width: 1920px;
+    height: 1080px;
+    background-color: black;
+    transform-style: preserve-3d;
+    perspective: 100vw;
+  }
+
+  .itemContainer .imgBx1 img {
+    display: none;
+  }
+
+  .itemContainer .imgBx1 input {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .itemContainer .imgBx1 span {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+    transform-style: preserve-3d;
+  }
+
+  .itemContainer .imgBx1 .bg1 {
+    left: 0;
+    background: url(../Assets/img/1.1.png);
+    background-position: initial;
+  }
+
+  .itemContainer .imgBx1 .bg1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: right;
+    transition: 1.3s;
+    background: url(../Assets/img/1.2.png);
+    background-position: initial;
+  }
+
+  .itemContainer .imgBx1 input:checked~.bg1::before {
+    transform: rotateY(180deg);
+  }
+
+  .itemContainer .imgBx1 .bg2 {
+    right: 0;
+    background: url(../Assets/img/1.2.png);
+    background-position: initial;
+    background-position-x: 100%;
+  }
+
+  .itemContainer .imgBx1 .bg2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../Assets/img/1.1.png);
+    background-position: initial;
+    background-position-x: 100%;
+    transform-origin: left;
+    transition: 1.3s;
+    transform: rotateY(180deg);
+  }
+
+  .itemContainer .imgBx1 input:checked~.bg2::before {
+    transform: rotateY(360deg);
+  }
+
+  .itemContainer .imgBx2 {
+    width: 1920px;
+    height: 1080px;
+    background-color: black;
+    transform-style: preserve-3d;
+    perspective: 100vw;
+  }
+
+  .itemContainer .imgBx2 img {
+    display: none;
+  }
+
+  .itemContainer .imgBx2 input {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .itemContainer .imgBx2 span {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+    transform-style: preserve-3d;
+  }
+
+  .itemContainer .imgBx2 .bg3 {
+    left: 0;
+    background: url(../Assets/img/2.1.png);
+    background-position: initial;
+  }
+
+  .itemContainer .imgBx2 .bg3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: right;
+    transition: 1.3s;
+    background: url(../Assets/img/2.2.png);
+    background-position: initial;
+  }
+
+  .itemContainer .imgBx2 input:checked~.bg3::before {
+    transform: rotateY(180deg);
+  }
+
+  .itemContainer .imgBx2 .bg4 {
+    right: 0;
+    background: url(../Assets/img/2.2.png);
+    background-position: initial;
+    background-position-x: 100%;
+  }
+
+  .itemContainer .imgBx2 .bg4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../Assets/img/2.1.png);
+    background-position: initial;
+    background-position-x: 100%;
+    transform-origin: left;
+    transition: 1.3s;
+    transform: rotateY(180deg);
+  }
+
+  .itemContainer .imgBx2 input:checked~.bg4::before {
+    transform: rotateY(360deg);
+  }
+
+  .itemContainer .imgBx3 {
+    width: 1920px;
+    height: 1080px;
+    background-color: black;
+    transform-style: preserve-3d;
+    perspective: 100vw;
+  }
+
+  .itemContainer .imgBx3 img {
+    display: none;
+  }
+
+  .itemContainer .imgBx3 input {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .itemContainer .imgBx3 span {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+    transform-style: preserve-3d;
+  }
+
+  .itemContainer .imgBx3 .bg5 {
+    left: 0;
+    background: url(../Assets/img/3.1.png);
+    background-position: initial;
+  }
+
+  .itemContainer .imgBx3 .bg5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: right;
+    transition: 1.3s;
+    background: url(../Assets/img/3.2.png);
+    background-position: initial;
+  }
+
+  .itemContainer .imgBx3 input:checked~.bg5::before {
+    transform: rotateY(180deg);
+  }
+
+  .itemContainer .imgBx3 .bg6 {
+    right: 0;
+    background: url(../Assets/img/3.2.png);
+    background-position: initial;
+    background-position-x: 100%;
+  }
+
+  .itemContainer .imgBx3 .bg6::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../Assets/img/3.1.png);
+    background-position: initial;
+    background-position-x: 100%;
+    transform-origin: left;
+    transition: 1.3s;
+    transform: rotateY(180deg);
+  }
+
+  .itemContainer .imgBx3 input:checked~.bg6::before {
+    transform: rotateY(360deg);
+  }
+
+  .itemContainer .imgBx4 {
+    width: 1920px;
+    height: 1080px;
+    background-color: black;
+    transform-style: preserve-3d;
+    perspective: 100vw;
+  }
+
+  .itemContainer .imgBx4 img {
+    display: none;
+  }
+
+  .itemContainer .imgBx4 input {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .itemContainer .imgBx4 span {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    pointer-events: none;
+    transform-style: preserve-3d;
+  }
+
+  .itemContainer .imgBx4 .bg7 {
+    left: 0;
+    background: url(../Assets/img/4.1.png);
+    background-position: initial;
+  }
+
+  .itemContainer .imgBx4 .bg7::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: right;
+    transition: 1.3s;
+    background: url(../Assets/img/4.2.png);
+    background-position: initial;
+  }
+
+  .itemContainer .imgBx4 input:checked~.bg7::before {
+    transform: rotateY(180deg);
+  }
+
+  .itemContainer .imgBx4 .bg8 {
+    right: 0;
+    background: url(../Assets/img/4.2.png);
+    background-position: initial;
+    background-position-x: 100%;
+  }
+
+  .itemContainer .imgBx4 .bg8::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../Assets/img/4.1.png);
+    background-position: initial;
+    background-position-x: 100%;
+    transform-origin: left;
+    transition: 1.3s;
+    transform: rotateY(180deg);
+  }
+
+  .itemContainer .imgBx4 input:checked~.bg8::before {
+    transform: rotateY(360deg);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .headerSection .header nav .mobileMenu {
+    display: none;
+  }
+
+  .headerSection .header nav .navigation {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 1980px) {
+  .headerSection .header nav .mobileMenu {
+    display: none;
+  }
+
+  .headerSection .header nav .navigation {
+    display: inline;
+  }
+
+  .headerSection .header nav .icon {
+    padding-left: 3em;
+    width: auto;
+  }
+
+  .headerSection .header nav .icon img {
+    width: 20vw;
+    height: 10vh;
+    object-position: center;
+  }
+}

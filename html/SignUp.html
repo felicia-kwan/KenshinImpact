@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/SignUpStyle.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbarContainer">
+            <img class="kensinImpactLogo" src="../Assets/img/Title.png" alt="">
+            <a href="./Home.html">
+                <button class="homeButton">Home</button>
+            </a>
+        </div>
+    </nav>
+
+    <div class="formSection">
+        <img class="background" src="../Assets/img/Background.png" alt="">
+        <div class="formContainer">
+            <div class="formHeader">
+                <h1>Sign Up</h1>
+            </div>
+            <form action="" method="GET" class="formLogin">
+                <div class="usernameContainer">
+                    <label for="">Username</label>
+                    <input type="text" name="usernameTextField" class="usernameTextField" id="usernameTextField">
+                    <label for="" class="error" id="usernameError"></label>
+                </div>
+                <div class="PassContainer">
+                    <label for="">Password</label>
+                    <input type="password" class="passwordTextField" name="passwordTextField" id="passwordTextField">
+                    <label for="" class="error" id="passwordError"></label>
+                </div>
+            </form>
+
+            <div class="buttonContainer">
+                <button id="loginButton" class="loginButton" onclick="submit()">Login</button>
+            </div>
+
+            <div class="dontHaveAccount">
+                <p>Don't have an account? <a href="./Register.html">Register</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/SignUpJavaScript.js"></script>
+</body>
+
+</html>
